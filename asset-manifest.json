@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/viktor-puzzle/static/css/main.f855e6bc.css",
+    "main.js": "/viktor-puzzle/static/js/main.e28d1f5e.js",
+    "static/js/787.eb33e587.chunk.js": "/viktor-puzzle/static/js/787.eb33e587.chunk.js",
+    "index.html": "/viktor-puzzle/index.html",
+    "main.f855e6bc.css.map": "/viktor-puzzle/static/css/main.f855e6bc.css.map",
+    "main.e28d1f5e.js.map": "/viktor-puzzle/static/js/main.e28d1f5e.js.map",
+    "787.eb33e587.chunk.js.map": "/viktor-puzzle/static/js/787.eb33e587.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e28d1f5e.js"
+  ]
+}
