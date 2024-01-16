@@ -1,51 +1,18 @@
-import dishwasher from './dishwasher.jpeg'
+import dishwasher from './dishwasher.webp'
 import './App.css';
 import { useState } from 'react';
-import ReactCodeInput from 'react-code-input'
+import { PinInput } from 'react-input-pin-code';
+import background from "./pirates-chest.jpeg";
  
-const numbers = "1234567";
-
-
-const width = '40px'
-const height = '50px'
-const fontSize = '30px'
-const props = {
-  inputStyle: {
-    fontFamily: 'monospace',
-    margin:  '4px',
-    MozAppearance: 'textfield',
-    width,
-    borderRadius: '3px',
-    fontSize,
-    height,
-    paddingLeft: '7px',
-    backgroundColor: 'black',
-    color: 'lightskyblue',
-    border: '1px solid lightskyblue'
-  },
-  inputStyleInvalid: {
-    fontFamily: 'monospace',
-    margin:  '4px',
-    MozAppearance: 'textfield',
-    width,
-    borderRadius: '3px',
-    fontSize,
-    height,
-    paddingLeft: '7px',
-    backgroundColor: 'black',
-    color: 'red',
-    border: '1px solid red'
-  }
-}
-
-
+const numbers = ["1234567", "1234576"];
 
 function App() {
-  const [curNum, setNum] = useState("");
   const [showResult, setShowResult] = useState(false);
+  const [values, setValues] = useState(numbers[0].split('').map(x => ''));
 
   function check(v) {
-    if (v === numbers) {
+    const found = numbers.find(n => n === v.join(''));
+    if (found) {
       setShowResult(true);
     } else {
       setShowResult(false);
@@ -53,19 +20,30 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App" style={{backgroundImage: `url(${background})`}}>
+      
         {!showResult &&
-        <ReactCodeInput type='number' fields={numbers.length} {...props} value={curNum} onChange={v => {
-          setNum(v);
-          check(v);
-        }} />
+          <div className='UpperContainer'>
+            <PinInput containerClassName="InputContainer"
+              inputClassName="InputS"
+              values={values}
+              onChange={(value, index, values) => {
+                setValues(values);
+                check(values);
+              }}
+              autoFocus='true'
+              borderColor='rgb(0,204,204)'
+              focusBorderColor='rgb(244, 0, 0)'
+              placeholder=''
+              required='false'
+              showState={false}
+              size="lg"
+            />
+          </div>
         }
         {showResult &&
-          <img src={dishwasher} alt="dishwasher" />
+          <div className='SolutionDiv'><img src={dishwasher} alt="dishwasher" /></div>
         }
-        
-      </header>
     </div>
   );
 }

@@ -1,5 +1,41 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  background-size: cover;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+@keyframes glowingBorders {
+  from {background-color: lightblue;}
+  to {background-color: lightcyan;}
+}
+
+.InputContainer {
+  margin-top: 20%;
+}
+.InputS.InputS:focus {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+.InputS.InputS {
+  /* margin-top: 30%; */
+  font-size: 2rem; 
+  background-color: lightblue;
+  animation-name: glowingBorders;
+  width: 4rem;
+  height: 4rem;
+}
+
+.SolutionDiv {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
