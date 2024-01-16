@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/viktor-puzzle/static/css/main.f855e6bc.css",
-    "main.js": "/viktor-puzzle/static/js/main.e28d1f5e.js",
+    "main.css": "/viktor-puzzle/static/css/main.f730a40f.css",
+    "main.js": "/viktor-puzzle/static/js/main.83dfe9ad.js",
     "static/js/787.eb33e587.chunk.js": "/viktor-puzzle/static/js/787.eb33e587.chunk.js",
+    "static/media/pirates-chest.jpeg": "/viktor-puzzle/static/media/pirates-chest.c77551dc170d410d5867.jpeg",
+    "static/media/dishwasher.webp": "/viktor-puzzle/static/media/dishwasher.08ce243e7ad9c96104b2.webp",
     "index.html": "/viktor-puzzle/index.html",
-    "main.f855e6bc.css.map": "/viktor-puzzle/static/css/main.f855e6bc.css.map",
-    "main.e28d1f5e.js.map": "/viktor-puzzle/static/js/main.e28d1f5e.js.map",
+    "main.f730a40f.css.map": "/viktor-puzzle/static/css/main.f730a40f.css.map",
+    "main.83dfe9ad.js.map": "/viktor-puzzle/static/js/main.83dfe9ad.js.map",
     "787.eb33e587.chunk.js.map": "/viktor-puzzle/static/js/787.eb33e587.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e28d1f5e.js"
+    "static/css/main.f730a40f.css",
+    "static/js/main.83dfe9ad.js"
   ]
 }
