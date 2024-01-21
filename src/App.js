@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { PinInput } from 'react-input-pin-code';
 import background from "./pirates-chest.jpeg";
  
-const numbers = ["1234567", "1234576"];
+const numbers = ["31225547", "31225574"];
 
 function App() {
   const [showResult, setShowResult] = useState(false);
